@@ -1,0 +1,15 @@
+{% if weather %}
+    <h2>{{ weather.city }}</h2>
+
+    <p>Temperature: {{ weather.temperature }} °C</p>
+    <p>Feels Like: {{ weather.feels_like }} °C</p>
+    <p>Description: {{ weather.weather_desc }}</p>
+    <p>Humidity: {{ weather.humidity }}%</p>
+    <p>Pressure: {{ weather.pressure }} hPa</p>
+    <p>Wind Speed: {{ weather.wind_speed }} m/s</p>
+    <p>Cloud Cover: {{ weather.cloud_cover }}%</p>
+    <p>Precipitation: {{ weather.precipitation }} mm</p>
+
+{% else %}
+    <p style="color:red;">No weather data available</p>
+{% endif %}

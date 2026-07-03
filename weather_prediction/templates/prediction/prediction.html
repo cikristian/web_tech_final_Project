@@ -1,0 +1,15 @@
+<h1>Weather Prediction</h1>
+
+{% if result %}
+
+    <h2>Tomorrow Forecast</h2>
+
+    <p><b>Temperature:</b> {{ result.predicted_temperature }} °C</p>
+
+    <p><b>Condition:</b> {{ result.predicted_condition }}</p>
+
+    <p><b>Wind Direction:</b> {{ result.predicted_wind_direction }}</p>
+
+{% else %}
+    <p style="color:red;">{{ error }}</p>
+{% endif %}
